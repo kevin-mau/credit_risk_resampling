@@ -30,20 +30,27 @@ in order to directly compare how our resampled test model did.  In the next sect
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
 * Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
+  * The balanced accuracy score of Model 1 is 0.952
+  * The precision score of the 0 Class is 1.0 and 1 Class is 0.85.
+  * The recall scores of the 0 Class is 0.99 and 1 Class is 0.91.
 
 
+* Machine Learning Model 2 (Oversampled model):
+  * The balanced accuracy score of Model 1 is 0.993
+  * The precision score of the 0 Class is 1.0 and 1 Class is 0.84.
+  * The recall scores of the 0 Class is 0.99 and 1 Class is 0.99.
 
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
 
 ## Summary
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+According to the balanced accuracy score, model 2 would be the better model.  The performance is not the only factor to weigh on as it is more 
+important for us to predict the value of 1, meaning the loan has a high risk of defaulting.  In random oversampling, we randomly select instances 
+of the risky loans class and add them to the training set until we’ve balanced the majority (healthy loans) and minority classes (the risky loans).  
+Since it artificially increases the number of instances in the minority class, it increases the frequency of the 1 values.  That trains the model to 
+tend to correctly predict all the true 1 values (to have a higher recall). But, this happens at the expense of tending to overestimate the frequency 
+of the 1 values (to have a lower precision).  Since our model is dealing with potentially risky and defaulting loans, the trade-off is justified as
+it is more important to predict the 1's in this case.  In summary, as we are trying to build a model that predicts dealing with potential loan 
+defaults, it would be more prudent to go with the oversampled model.
 
 ---
 
