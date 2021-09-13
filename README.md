@@ -29,14 +29,14 @@ did from the first test in order to directly compare how our oversampled test mo
 
 * Machine Learning Model 1:
   * The balanced accuracy score of Model 1 is 0.952
-  * The precision score of the 0 Class is 1.0 and 1 Class is 0.85.
-  * The recall scores of the 0 Class is 0.99 and 1 Class is 0.91.
+  * The precision score of the `0` Class is 1.0 and `1` Class is 0.85.
+  * The recall scores of the `0` Class is 0.99 and `1` Class is 0.91.
 ![classification_report_1](https://github.com/kevin-mau/credit_risk_resampling/blob/main/Resources/classification_report_1.PNG?raw=true)
 
 * Machine Learning Model 2 (Oversampled model):
   * The balanced accuracy score of Model 1 is 0.993
-  * The precision score of the 0 Class is 1.0 and 1 Class is 0.84.
-  * The recall scores of the 0 Class is 0.99 and 1 Class is 0.99.
+  * The precision score of the `0` Class is 1.0 and `1` Class is 0.84.
+  * The recall scores of the `0` Class is 0.99 and `1` Class is 0.99.
 ![classification_report_2](https://github.com/kevin-mau/credit_risk_resampling/blob/main/Resources/classification_report_2.PNG?raw=true)
 
 
