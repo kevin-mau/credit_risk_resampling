@@ -27,8 +27,6 @@ in order to directly compare how our resampled test model did.  In the next sect
 
 ## Results
 
-Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
-
 * Machine Learning Model 1:
   * The balanced accuracy score of Model 1 is 0.952
   * The precision score of the 0 Class is 1.0 and 1 Class is 0.85.
