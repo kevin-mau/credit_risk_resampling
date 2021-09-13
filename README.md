@@ -10,8 +10,8 @@ To do our comparisons, we will get the count of the target classes, train logist
 generate confusion matrices, and generate classification reports for both cases.
 
 We will use a dataset of historical lending activity from a peer-to-peer lending services company to build these models.  The goal of building 
-these models is so that we can identify the creditworthiness of borrowers.  The creditworthiness will be signified by a value of 0 in the 
-`loan_status` column, meaning that the loan is healthy.  A value of 1 means that the loan has a high risk of defaulting.
+these models is so that we can identify the creditworthiness of borrowers.  The creditworthiness will be signified by a value of `0` in the 
+`loan_status` column, meaning that the loan is healthy.  A value of `1` means that the loan has a high risk of defaulting.
 
 To build the model, first we take the CSV dataset and put it into a dataframe.  We will split the dataframe with `y` being the `loan_status` column, 
 and `X` dataframe as the remaining columns.  Here we use the `value_counts` function to show us the amount of healthy loans in the dataset versus
