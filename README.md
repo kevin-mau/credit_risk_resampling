@@ -13,7 +13,7 @@ We will use a dataset of historical lending activity from a peer-to-peer lending
 these models is so that we can identify the creditworthiness of borrowers.  The creditworthiness will be signified by a value of 0 in the 
 `loan_status` column, meaning that the loan is healthy.  A value of 1 means that the loan has a high risk of defaulting.
 
-To build the model, first we take the CSV dataset and put into a dataframe.  We will split the dataframe with `y` being the `loan_status` column, 
+To build the model, first we take the CSV dataset and put it into a dataframe.  We will split the dataframe with `y` being the `loan_status` column, 
 and `X` dataframe as the remaining columns.  Here we use the `value_counts` function to show us the amount of healthy loans in the dataset versus
 the amount of risky loans in both the original model.  Finally, we split the data into training and testing datasets by using the function
 `train_test_split`.  With the training datasets we can fit our logistic regression model.  We can predict and evaluate the model’s performance by
