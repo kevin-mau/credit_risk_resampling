@@ -42,7 +42,7 @@ in order to directly compare how our resampled test model did.  In the next sect
 
 ## Summary
 
-According to the balanced accuracy score, model 2 would be the better model.  The performance is not the only factor to weigh on as it is more 
+According to the balanced accuracy score model 2 would be the better model.  The performance is not the only factor to weigh on as it is more 
 important for us to predict the value of 1: the loan has a high risk of defaulting.  In random oversampling, we randomly select instances of the 
 risky loans class and add them to the training set until we’ve balanced the majority (healthy loans) and minority classes (the risky loans).  
 Since it artificially increases the number of instances in the minority class, it increases the frequency of the 1 values.  That trains the model to 
