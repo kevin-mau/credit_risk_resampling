@@ -20,7 +20,7 @@ the amount of risky loans in both the original model.  Finally, we split the dat
 calculating the accuracy score of the model, generating a confusion matrix, and printing the classification report.
 
 From the `value_counts` function we did earlier, we see that the 75036 number of good loans greatly outweight the 2500 risky loans, therefore we 
-predict a new logistic regression model with resampling the training data using oversampling of the high-risk loans.  We use the `RandomOverSampler`
+predict a new logistic regression model with resampling the training data by oversampling the high-risk loans.  We use the `RandomOverSampler`
 module from the imbalanced-learn library to resample the data and with `value_counts` function we confirm that the labels have an equal number of data 
 points.  Once again, we use the `LogisticRegression` classifier, but this time on the oversampled data and print and generate the same reports that we 
 did from the first test in order to directly compare how our oversampled test model did.  In the next section, we will examine these results.
